@@ -2,10 +2,9 @@
 
 # Threat Hunting with Splunk - Sherlock Writeup
 
-![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-Threat%20Hunting%20with%20Splunk-9FEF00?logo=hackthebox&logoColor=black)
+![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-Sherlock-9FEF00?logo=hackthebox&logoColor=black)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-F1C40F)
-![Type](https://img.shields.io/badge/Type-Sherlock-8A2BE2)
-![Category](https://img.shields.io/badge/Category-Threat%20Hunting-2496ED)
+![Category](https://img.shields.io/badge/Category-DFIR-F97316)
 
 *A threat hunting walkthrough tracing a disguised executable, C2 activity, and attacker commands through Sysmon logs in Splunk.*
 
