@@ -117,7 +117,7 @@ Checking further for process creation, but in the hopes of finding something lik
 | --- | --- | --- |
 | 2024-06-06 09:31:57.220 | `C:\Windows\System32\net1.exe` | `C:\Windows\system32\net1 user jumpadmin U7gk54skuvhs@1 /add` |
 
-The command showed the intended account creation. It did not show the command’s success status or prove that `jumpadmin` was added to the Administrators group.
+> The command showed the intended account creation. It did not show the command’s success status or prove that `jumpadmin` was added to the Administrators group.
 
 ## Finding the PowerShell Script
 
