@@ -1,64 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="920" height="890" viewBox="0 0 920 890" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="830" viewBox="0 0 920 830" role="img" aria-labelledby="title desc">
 <title id="title">Threat Hunting with Splunk — investigation timeline</title>
 <desc id="desc">June 6, 2024. Ten chronological entries show download metadata, executable launch, C2 connection, attacker commands, PowerShell activity, and a firewall rule. Times match Splunk display time. Rows are equally spaced, not scaled by elapsed time.</desc>
-<rect width="920" height="890" fill="#080808"/>
+<rect width="920" height="830" fill="#080808" />
 <g font-family="DejaVu Sans, Arial, sans-serif">
 <text x="38" y="46" fill="#F1C40F" font-size="14" letter-spacing="1.5">THREAT HUNTING WITH SPLUNK</text>
 <text x="38" y="86" fill="#FFFFFF" font-size="30" font-weight="700">Investigation timeline</text>
-<text x="38" y="117" fill="#FFFFFF" font-size="15">June 6, 2024 · Sysmon events in Splunk</text>
-<text x="837" y="154" fill="#F1C40F" font-size="12" text-anchor="middle">EVENT ID</text>
-<line x1="228" y1="184" x2="228" y2="796" stroke="#FFFFFF" stroke-width="2"/>
-<text x="203" y="189" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:24:18.613</text>
-<circle cx="228" cy="184" r="6" fill="#F1C40F"/>
-<text x="254" y="188" fill="#FFFFFF" font-size="18" font-weight="700">Download source recorded</text>
-<text x="254" y="212" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">Zone.Identifier points to 13[.]232[.]55[.]12:8080</text>
-<text x="837" y="189" fill="#F1C40F" font-size="16" text-anchor="middle">15</text>
-<text x="203" y="257" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:07.170</text>
-<circle cx="228" cy="252" r="6" fill="#F1C40F"/>
-<text x="254" y="256" fill="#FFFFFF" font-size="18" font-weight="700">Disguised executable runs</text>
-<text x="254" y="280" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">application_form.pdf.exe</text>
-<text x="837" y="257" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
-<text x="203" y="325" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:09.378</text>
-<circle cx="228" cy="320" r="6" fill="#F1C40F"/>
-<text x="254" y="324" fill="#FFFFFF" font-size="18" font-weight="700">Connection to C2 endpoint</text>
-<text x="254" y="348" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">13[.]232[.]55[.]12 on port 30</text>
-<text x="837" y="325" fill="#F1C40F" font-size="16" text-anchor="middle">3</text>
-<text x="203" y="393" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:55.870</text>
-<circle cx="228" cy="388" r="6" fill="#F1C40F"/>
-<text x="254" y="392" fill="#FFFFFF" font-size="18" font-weight="700">Command shell starts</text>
-<text x="254" y="416" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">application_form.pdf.exe spawns cmd.exe</text>
-<text x="837" y="393" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
-<text x="203" y="461" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:59–09:29:22</text>
-<circle cx="228" cy="456" r="6" fill="#F1C40F"/>
-<text x="254" y="460" fill="#FFFFFF" font-size="18" font-weight="700">Attacker enumerates the host</text>
-<text x="254" y="484" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">whoami, then tasklist</text>
-<text x="837" y="461" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
-<text x="203" y="529" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:31:57.220</text>
-<circle cx="228" cy="524" r="6" fill="#F1C40F"/>
-<text x="254" y="528" fill="#FFFFFF" font-size="18" font-weight="700">Account creation command</text>
-<text x="254" y="552" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">net1 user jumpadmin ... /add</text>
-<text x="837" y="529" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
-<text x="203" y="597" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:40:46.643</text>
-<circle cx="228" cy="592" r="6" fill="#F1C40F"/>
-<text x="254" y="596" fill="#FFFFFF" font-size="18" font-weight="700">PowerShell starts</text>
-<text x="254" y="620" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">Spawned by cmd.exe</text>
-<text x="837" y="597" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
-<text x="203" y="665" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:41:44.019</text>
-<circle cx="228" cy="660" r="6" fill="#F1C40F"/>
-<text x="254" y="664" fill="#FFFFFF" font-size="18" font-weight="700">Temporary script created</text>
-<text x="254" y="688" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">C:\Windows\Temp\tmp.ps1</text>
-<text x="837" y="665" fill="#F1C40F" font-size="16" text-anchor="middle">11</text>
-<text x="203" y="733" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:42:08.640</text>
-<circle cx="228" cy="728" r="6" fill="#F1C40F"/>
-<text x="254" y="732" fill="#FFFFFF" font-size="18" font-weight="700">Execution-policy bypass requested</text>
-<text x="254" y="756" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">powershell.exe -ep bypass</text>
-<text x="837" y="733" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
-<text x="203" y="801" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:46:03.796</text>
-<circle cx="228" cy="796" r="6" fill="#F1C40F"/>
-<text x="254" y="800" fill="#FFFFFF" font-size="18" font-weight="700">Outbound block rule recorded</text>
-<text x="254" y="824" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">secevent1 targets 13[.]232[.]55[.]12</text>
-<text x="837" y="801" fill="#F1C40F" font-size="16" text-anchor="middle">13</text>
-<line x1="38" y1="842" x2="882" y2="842" stroke="#FFFFFF" stroke-width="1"/>
-<text x="38" y="867" fill="#FFFFFF" font-size="12">Times as displayed in Splunk. Equal spacing does not represent elapsed time.</text>
+<text x="837" y="130" fill="#F1C40F" font-size="12" text-anchor="middle">EVENT ID</text>
+<rect x="225" y="160" width="6" height="612" fill="#FFFFFF" />
+<text x="203" y="165" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:24:18.613</text>
+<rect x="220" y="152" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="164" fill="#FFFFFF" font-size="18" font-weight="700">Download source recorded</text>
+<text x="254" y="188" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">Zone.Identifier points to 13(.)232(.)55(.)12:8080</text>
+<text x="837" y="165" fill="#F1C40F" font-size="16" text-anchor="middle">15</text>
+<text x="203" y="233" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:07.170</text>
+<rect x="220" y="220" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="232" fill="#FFFFFF" font-size="18" font-weight="700">Disguised executable runs</text>
+<text x="254" y="256" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">application_form.pdf.exe</text>
+<text x="837" y="233" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
+<text x="203" y="301" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:09.378</text>
+<rect x="220" y="288" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="300" fill="#FFFFFF" font-size="18" font-weight="700">Connection to C2 endpoint</text>
+<text x="254" y="324" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">13(.)232(.)55(.)12 on port 30</text>
+<text x="837" y="301" fill="#F1C40F" font-size="16" text-anchor="middle">3</text>
+<text x="203" y="369" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:55.870</text>
+<rect x="220" y="356" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="368" fill="#FFFFFF" font-size="18" font-weight="700">Command shell starts</text>
+<text x="254" y="392" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">application_form.pdf.exe spawns cmd.exe</text>
+<text x="837" y="369" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
+<text x="203" y="437" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:28:59–09:29:22</text>
+<rect x="220" y="424" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="436" fill="#FFFFFF" font-size="18" font-weight="700">Attacker enumerates the host</text>
+<text x="254" y="460" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">whoami, then tasklist</text>
+<text x="837" y="437" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
+<text x="203" y="505" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:31:57.220</text>
+<rect x="220" y="492" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="504" fill="#FFFFFF" font-size="18" font-weight="700">Account creation command</text>
+<text x="254" y="528" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">net1 user jumpadmin ... /add</text>
+<text x="837" y="505" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
+<text x="203" y="573" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:40:46.643</text>
+<rect x="220" y="560" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="572" fill="#FFFFFF" font-size="18" font-weight="700">PowerShell starts</text>
+<text x="254" y="596" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">Spawned by cmd.exe</text>
+<text x="837" y="573" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
+<text x="203" y="641" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:41:44.019</text>
+<rect x="220" y="628" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="640" fill="#FFFFFF" font-size="18" font-weight="700">Temporary script created</text>
+<text x="254" y="664" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">C:\Windows\Temp\tmp.ps1</text>
+<text x="837" y="641" fill="#F1C40F" font-size="16" text-anchor="middle">11</text>
+<text x="203" y="709" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:42:08.640</text>
+<rect x="220" y="696" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="708" fill="#FFFFFF" font-size="18" font-weight="700">Execution-policy bypass requested</text>
+<text x="254" y="732" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">powershell.exe -ep bypass</text>
+<text x="837" y="709" fill="#F1C40F" font-size="16" text-anchor="middle">1</text>
+<text x="203" y="777" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="14" text-anchor="end">09:46:03.796</text>
+<rect x="220" y="764" width="16" height="16" fill="#F1C40F" />
+<text x="254" y="776" fill="#FFFFFF" font-size="18" font-weight="700">Outbound block rule recorded</text>
+<text x="254" y="800" fill="#FFFFFF" font-family="DejaVu Sans Mono, monospace" font-size="13">secevent1 targets 13(.)232(.)55(.)12</text>
+<text x="837" y="777" fill="#F1C40F" font-size="16" text-anchor="middle">13</text>
 </g>
 </svg>
